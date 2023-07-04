@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_bookmark_marked_128"
+            android:title="@string/nav_bookmarks" />
+    </group>
+
+    <item android:title="@string/nav_social">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_round_facebook_128"
+                android:title="@string/nav_facebook" />
+
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_round_youtube_128"
+                android:title="@string/nav_youtube" />
+
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_round_twitter_128"
+                android:title="@string/nav_twitter" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_others">
+        <menu>
+
+            <item
+                android:id="@+id/nav_app_settings"
+                android:icon="@drawable/ic_settings_128"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy_128"
+                android:title="@string/nav_privacy_policy" />
+
+            <item
+                android:id="@+id/nav_rate_app"
+                android:icon="@drawable/ic_rate_app_128"
+                android:title="@string/nav_rate_app" />
+
+        </menu>
+
+    </item>
+
+</menu>

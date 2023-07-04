@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/size_2dp"
+        android:theme="@style/ToolbarTheme"
+        android:weightSum="1"
+        app:contentInsetLeft="@dimen/size_0dp"
+        app:contentInsetStart="@dimen/size_0dp"
+        app:contentInsetStartWithNavigation="@dimen/size_0dp"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <EditText
+                android:id="@+id/search_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:autofillHints="@string/toolbar_search"
+                android:background="@color/grayExtraLight"
+                android:focusable="true"
+                android:hint="@string/toolbar_search"
+                android:inputType="textCapWords|textAutoComplete|textAutoCorrect"
+                android:maxLines="1"
+                android:padding="@dimen/size_7dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/grayLight"
+                android:textCursorDrawable="@drawable/search_cursor_gray"
+                android:textSize="@dimen/text_16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clear_search"
+                android:layout_width="@dimen/size_18dp"
+                android:layout_height="@dimen/size_18dp"
+                android:layout_alignEnd="@+id/search_term"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size_7dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_clear_64"
+                android:tint="@color/grayLight"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/size_0dp"
+        app:cardElevation="@dimen/size_0dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_3dp"
+                android:layout_marginBottom="@dimen/size_3dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/post_image"
+                        android:layout_width="@dimen/size_130dp"
+                        android:layout_height="@dimen/size_100dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@color/placeholder" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size_5dp"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:orientation="vertical">
+
+                    <com.bestweby.enewz.customview.RobotoTextView
+                        android:id="@+id/post_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3dp"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/text_placeholder"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold" />
+
+                    <com.bestweby.enewz.customview.RobotoTextView
+                        android:id="@+id/post_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/size_5dp"
+                        android:layout_marginBottom="@dimen/size_5dp"
+                        android:background="@color/colorAccent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="@dimen/size_2dp"
+                        android:text="@string/text_placeholder"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/size_12dp"
+                                android:layout_height="@dimen/size_12dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_clock_64"
+                                android:tint="@color/gray" />
+
+                            <com.bestweby.enewz.customview.RobotoTextView
+                                android:id="@+id/post_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/size_5dp"
+                                android:text="@string/text_placeholder"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/text_12sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/post_menu"
+                            android:layout_width="@dimen/size_25dp"
+                            android:layout_height="@dimen/size_25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/size_5dp"
+                            android:src="@drawable/ic_menu_64"
+                            android:tint="@color/gray" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="?android:attr/dividerHorizontal" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

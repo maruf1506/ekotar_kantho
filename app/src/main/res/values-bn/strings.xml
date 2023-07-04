@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">একতার কণ্ঠ</string>   <!--Replace with your app name -->
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_categories">ক্যাটেগরিস</string>
+    <string name="nav_category">ক্যাটেগরিস</string>
+    <string name="nav_bookmarks">বুকমার্কস</string>
+    <string name="nav_privacy_policy">প্রাইভেসি পলিসি</string>
+    <string name="nav_social">সোশ্যাল মিডিয়া</string>
+    <string name="nav_facebook">ফেসবুক</string>
+    <string name="nav_youtube">ইউটিউব</string>
+    <string name="nav_twitter">টুইটার</string>
+    <string name="nav_others">অন্যান্য</string>
+    <string name="nav_rate_app">রেট এপ্স</string>
+    <string name="nav_settings">সেটিংস</string>
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">ঠিকানা</string>
+    <string name="toolbar_categories">ক্যাটেগরিস</string>
+    <string name="toolbar_comments">কমেন্টস</string>
+    <string name="toolbar_bookmarks">বুকমার্কস</string>
+    <string name="toolbar_settings">সেটিংস</string>
+
+    <string name="footer">কপিরাইট © ২০২৩ একতার কণ্ঠ এর সকল স্বত্ব সংরক্ষিত। এই ওয়েবসাইটের কোনো লেখা, ছবি, ভিডিও অনুমতি ছাড়া ব্যবহার বেআইনি ।</string>
+    <string name="home">সর্বশেষ খবর</string>
+    <string name="newsfeed">নিউজফিড</string>
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">এখানে সার্চ করুন</string>
+    <string name="toolbar_filter">ফিল্টার</string>
+
+    <!-- Item Menu String -->
+    <string name="menu_share">শেয়ার</string>
+    <string name="menu_save">সেইভ</string>
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">ফেইলড</string>
+    <string name="no_internet_msg">ইন্টারনেট নাই!</string>
+    <string name="connect_msg">কানেন্ট করুন</string>
+    <string name="server_failed_msg">সার্ভার কানেকশন ফেইলড</string>
+    <string name="no_data">তথ্য নেই!</string>
+    <string name="no_bookmarks">বুকমার্কস নেই!</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">নটিফিকেশন</string>
+    <string name="pref_notification_summary">নটিফিকেশন অন/অফ করতে </string>
+    <string name="pref_text_title">লেখার ধরন</string>
+    <string name="pref_text_size">লেখার ধরন সিলেক্ট করুন</string>
+    <string name="pref_theme_title">থিম</string>
+    <string name="pref_theme_size">থিম সিলেক্ট করুন</string>
+    <string name="pref_language_dialog_title">ভাষা</string>
+    <string name="pref_language_title">ভাষা</string>
+    <string name="pref_language_summary">বাংলা</string>
+    <string name="pref_app_version_title">এপ্স ভার্সন</string>
+    <string name="pref_app_version_summary">v১.০</string>
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+
+    <!-- App Text Settings -->
+    <string name="small_text">ছোটো</string>
+    <string name="default_text">মাঝারী</string>
+    <string name="large_text">বড়</string>
+
+    <!-- App Language Settings -->
+    <string name="language_bangla">বাংলা</string>
+    <string name="language_english">English</string>
+
+
+    <string name="share_text">সেরা সংবাদ অ্যাপ্লিকেশন ইনস্টল করুন:</string>
+    <string name="permission_not_granted">অনুমতি দেওয়া হয়নি!</string>
+
+
+    <string name="text_placeholder">টেক্সট</string>
+    <string name="done">ডান</string>
+    <string name="ok">অকে</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="submit">সাবমিট</string>
+    <string name="posts">পোস্ট</string>
+    <string name="already_saved">সেইভ আছে</string>
+    <string name="saved">সেইভড</string>
+    <string name="view_detail">বিস্তারিত দেখুন</string>
+    <string name="detail">বিস্তারিত</string>
+    <string name="mark_read">পঠিত হিসেবে চিহ্নিত করুন</string>
+    <string name="delete">ডিলেট</string>
+    <string name="close">বন্ধ করুন</string>
+</resources>

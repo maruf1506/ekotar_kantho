@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="@dimen/size_3dp"
+        shimmer:shimmer_duration="1500">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_200dp"
+            android:layout_gravity="center"
+            android:background="@color/shimmer" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</layout>
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme">
+
+        <include
+            android:id="@+id/search_toolbar"
+            layout="@layout/search_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedscroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhiteLight">
+
+                <include
+                    android:id="@+id/list_shimmer_layout"
+                    layout="@layout/shimmer_search_post_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/primary_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/size_35dp"
+                    android:layout_height="@dimen/size_35dp"
+                    android:layout_below="@+id/primary_recycler"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/empty_list_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

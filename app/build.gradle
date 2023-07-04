@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.joinhomebase.homebase.homebase"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "6"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildFeatures{
+            dataBinding true // for data binding
+            viewBinding true // for view binding
+        }
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "en", "bn"
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Androidx material library dependency
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    //Network and ImageModel loader dependency
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.3'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.3'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Facebook dependency
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+    // Room Persistence database dependency
+    implementation 'androidx.room:room-runtime:2.2.3'
+    annotationProcessor 'androidx.room:room-compiler:2.2.3'
+
+    //Extra helper library dependency
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+}

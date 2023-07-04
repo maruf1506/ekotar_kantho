@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.bestweby.enewz.customview.CustomDrawerLayout
+        android:id="@+id/home_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <com.google.android.material.appbar.AppBarLayout
+                   android:id="@+id/tal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fitsSystemWindows="true"
+                   android:theme="@style/AppTheme.AppBarOverlay">
+
+                   <com.google.android.material.appbar.CollapsingToolbarLayout
+                       android:id="@+id/collapse_toolbar"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/colorWhite"
+                       app:contentScrim="@color/colorPrimary"
+                       app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                       app:titleEnabled="false">
+
+                       <include
+                           android:id="@+id/home_toolbar"
+                           layout="@layout/home_toolbar_layout"
+                           android:layout_width="match_parent"
+                           android:layout_height="?attr/actionBarSize"
+                           android:layout_alignParentTop="true"
+                           android:fitsSystemWindows="true"
+                           app:layout_collapseMode="pin"
+                           app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+                   </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+               </com.google.android.material.appbar.AppBarLayout>
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_below="@+id/tal"
+                   android:layout_above="@id/bottombar"
+                   android:id="@+id/homecontainer"/>
+
+               <LinearLayout
+                   android:id="@+id/bottombar"
+                   android:layout_width="match_parent"
+                   android:layout_height="?actionBarSize"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/colorWhite"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+                   <TextView
+                       android:id="@+id/home"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="?android:attr/selectableItemBackground"
+                       android:drawableTop="@drawable/ic_baseline_local_fire"
+                       android:drawableTint="@color/colorProgress"
+                       android:drawablePadding="5dp"
+                       android:padding="5dp"
+                       android:text="@string/home"
+                       android:textAlignment="center"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                       android:textColor="@color/colorBlack" />
+
+                   <TextView
+                       android:id="@+id/newsfeed"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="?android:attr/selectableItemBackground"
+                       android:drawableTop="@drawable/ic_baseline_feed"
+                       android:drawableTint="@color/colorPrimaryDark"
+                       android:drawablePadding="5dp"
+                       android:padding="5dp"
+                       android:text="@string/newsfeed"
+                       android:textAlignment="center"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                       android:textColor="@color/colorBlack" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/main_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:theme="@style/NavigationViewTheme"
+            android:background="@color/colorWhite"
+            app:itemBackground="@android:color/transparent"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:menu="@menu/nav_drawer_layout"/>
+
+    </com.bestweby.enewz.customview.CustomDrawerLayout>
+
+</layout>

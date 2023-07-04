@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="app_theme_entries">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+
+    <string-array name="app_theme_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="app_text_size_entries">
+        <item>@string/small_text</item>
+        <item>@string/default_text</item>
+        <item>@string/large_text</item>
+    </string-array>
+
+    <string-array name="app_locality_entries">
+        <item>@string/language_english</item>
+        <item>@string/language_bangla</item>
+    </string-array>
+
+    <string-array name="app_locality_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="app_locality">
+        <item>en</item>
+        <item>bn</item>
+    </string-array>
+
+    <string-array name="web_protocol">
+        <item>tel</item>
+        <item>sms</item>
+        <item>smsto</item>
+        <item>mms</item>
+        <item>mmsto</item>
+        <item>mailto</item>
+        <item>geo</item>
+        <item>whatsapp</item>
+    </string-array>
+
+    <string-array name="web_extensions">
+        <item>doc</item>
+        <item>docx</item>
+        <item>xls</item>
+        <item>xlsx</item>
+        <item>xlsx</item>
+        <item>ppt</item>
+        <item>pptx</item>
+        <item>pdf</item>
+        <item>mp3</item>
+        <item>zip</item>
+        <item>rar</item>
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>png</item>
+    </string-array>
+
+</resources>

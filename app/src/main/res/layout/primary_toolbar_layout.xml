@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        app:contentInsetLeft="@dimen/size_0dp"
+        app:contentInsetStart="@dimen/size_0dp"
+        app:contentInsetStartWithNavigation="@dimen/size_0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.bestweby.enewz.customview.RobotoTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="start"
+                android:layout_weight=".70"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:layout_gravity="end"
+                android:layout_weight=".30"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_menu_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/size_7dp"
+                        android:src="@drawable/ic_search"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:tint="@color/gray" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_menu_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/size_7dp"
+                        android:src="@drawable/ic_home_128"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:tint="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/cart_counter"
+                        android:layout_width="@dimen/size_20dp"
+                        android:layout_height="@dimen/size_20dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/toolbar_badge_circle"
+                        android:gravity="center_horizontal"
+                        android:text="10"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_8sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

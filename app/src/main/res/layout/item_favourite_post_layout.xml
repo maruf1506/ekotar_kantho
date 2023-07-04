@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/size_4dp"
+        app:cardElevation="@dimen/size_3dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_5dp">
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@color/placeholder" />
+
+            </RelativeLayout>
+
+            <com.bestweby.enewz.customview.RobotoTextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_7dp"
+                android:layout_marginEnd="@dimen/size_7dp"
+                android:layout_marginBottom="@dimen/size_7dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/text_placeholder"
+                android:textSize="@dimen/text_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack" />
+
+            <com.bestweby.enewz.customview.RobotoTextView
+                android:id="@+id/post_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_7dp"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/text_placeholder"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_7dp"
+                android:layout_marginEnd="@dimen/size_7dp"
+                android:layout_marginBottom="@dimen/size_10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/size_12dp"
+                        android:layout_height="@dimen/size_12dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_clock_64"
+                        android:tint="@color/grayLight" />
+
+                    <com.bestweby.enewz.customview.RobotoTextView
+                        android:id="@+id/post_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_5dp"
+                        android:text="@string/text_placeholder"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/remove_product"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:padding="@dimen/size_7dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_delete_cane"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:tint="@color/gray" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

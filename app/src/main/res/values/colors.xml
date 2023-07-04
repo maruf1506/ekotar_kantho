@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#006A4E</color>
+    <color name="colorPrimaryLight">#f5f8fa</color>
+    <color name="colorAccent">#006A4E</color>
+
+    <color name="colorAccentLight">#E0EEF5</color>
+    <color name="colorPrimary2">#455a64</color>
+    <color name="colorProgress">#F42A41</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteLight">#f5f5f5</color>
+    <color name="colorWhiteTransparent">#b4ffffff</color>
+    <color name="translucentWhite">#33ffffff</color>
+
+    <color name="colorBlack">#373737</color>
+    <color name="colorTBlack">#000000</color>
+    <color name="colorBlackLight">#607d8b</color>
+    <color name="colorBlackSemiTransparent">#b0bec5</color>
+    <color name="colorBlackTransparent">#cfd8dc</color>
+
+    <color name="gray">#757575</color>
+    <color name="grayLight">#9e9e9e</color>
+    <color name="grayExtraLight">#0d000000</color>
+
+    <color name="splashGradStart">#57006A4E</color>
+    <color name="splashGradCenter">#1E006A4E</color>
+    <color name="splashGradEnd">#ffffff</color>
+
+    <color name="colorBlue">#21B8F3</color>
+    <color name="colorTeal">#009688</color>
+    <color name="colorRed">#E91E63</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorViolet">#673AB7</color>
+
+    <color name="disabledGrey">#BDBDBD</color>
+    <color name="divider">#D5D8E1</color>
+    <color name="warning">#fde90e</color>
+    <color name="danger">#ff3e30</color>
+    <color name="ok">#08de05</color>
+
+    <color name="placeholder">#acacac</color>
+    <color name="shimmerDark">#838383</color>
+    <color name="shimmer">#a7a7a7</color>
+    <color name="shimmerLight">#D5D3D3</color>
+    <color name="shimmerExtraLight">#0F000000</color>
+    <color name="drawerItem">#37474f</color>
+
+</resources>
